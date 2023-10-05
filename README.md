@@ -3,7 +3,7 @@ Here this project consist of mainly 6 microservices and those are,
   1/  User service (banking-core-user-service) : 
   This service includes all the operations under the User such as registrations and retrieval. Additionally, this API consumes keycloak REST API to register and manage the user base while using the local PostgreSQL database as well.
   
-   2/ Fund transfer service (banking-core-fund-transfer-service):
+  2/ Fund transfer service (banking-core-fund-transfer-service):
   This is the service that handles all the fund transfers between accounts and this API will push messages to a centralized RabbitMQ queue to use from the Notification service.
     
    3/ Payment service (banking-core-payments-service):
