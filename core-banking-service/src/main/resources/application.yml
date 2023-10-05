@@ -1,0 +1,24 @@
+
+spring:
+  application:
+    name: core-banking-service
+  datasource:
+    url:  jdbc:postgresql://localhost:5432/banking_core_service
+    username: postgres
+    password: 123456
+    driver-class-name:  org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none
+
+server:
+  port: 8092
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8081/eureka
+
+info:
+  app:
+    name: ${spring.application.name}

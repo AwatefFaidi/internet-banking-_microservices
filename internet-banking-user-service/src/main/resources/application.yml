@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: internet-banking-user-service
+  datasource:
+    url: jjdbc:postgresql://localhost:5432/banking_core_user_service
+    username: postgres
+    password: 123456
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+server:
+  port: 8083
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8081/eureka
+
+info:
+  app:
+    name: ${spring.application.name}
+
+app:
+  config:
+    keycloak:
+      server-url: http://localhost:8080/auth
+      realm: javatodev-internet-banking
+      clientId: internet-banking-api-client
+      client-secret: e8548d56-d743-45ef-8655-063c9cd96759

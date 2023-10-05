@@ -1,0 +1,6 @@
+ BankAccountEntity.java to store accounts under user.
+ 
+ Then UtilityAccountEntity.java to store third party utility payment numbers, Here this core banking service will send payments
+  to defined number when user send a Utility payment with a reference from the internet banking side.
+  
+  TransactionEntity.java table to keep all the banking core transactions in a single table.
